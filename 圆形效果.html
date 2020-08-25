@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    #circle-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .btn-container {
+      position: relative;
+    }
+
+    button {
+      border: 0;
+      border-radius: 50px;
+      color: white;
+      background: #5f55af;
+      padding: 15px 20px 16px 60px;
+      text-transform: uppercase;
+      background: linear-gradient(to right, #f72585 50%, #5f55af 50%);
+      background-size: 200% 100%;
+      background-position: right bottom;
+      transition: all 2s ease;
+    }
+
+    span {
+      position: absolute;
+      left: 0;
+      top: 0%;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      background: #f72585;
+      padding: 8px;
+      border-radius: 50%;
+    }
+
+    button:hover {
+      background-position: left bottom;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="circle-btn">
+    <div class="btn-container">
+      <span></span>
+      <button>Hover me</button>
+    </div>
+  </div>
+</body>
+
+</html>
